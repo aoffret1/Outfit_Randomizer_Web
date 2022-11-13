@@ -1,7 +1,3 @@
-//Resources: 
-//Dowloading data: https://firebase.google.com/docs/storage/web/download-files#download_data_via_url
-// net ninjas on Youtube
-
 import './App.css';
 import { useState } from 'react';
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
@@ -12,7 +8,7 @@ function App() {
   //Output for the pictures.
   const [output, setOutput] = useState(
     <div id="output">
-      <p>Default Text</p>
+      <p>Please choose an option.</p>
     </div>
   );
 
@@ -21,8 +17,14 @@ function App() {
 ***********************/
   var shirtClick = () => {
     console.log("Shirt/Bottoms button worked");
+    //Create the shirt URL
     const shirtNum = (Math.random() * 10 + 2);
-   
+    const shirtUrl = "placeholder";
+    //Create the shirt URL
+    const bottomsNum = (Math.random() * 10 + 2);
+    const bottomsUrl = "placeholder";
+
+    // Update the html output.
     setOutput(
       <div id="output">
         <p>Shirt</p>
@@ -39,6 +41,12 @@ function App() {
   ***********************/
   var dressClick = () => {
     console.log("Dress button worked");
+
+    //Create the dress URL
+    const dressNum = (Math.random() * 10 + 2);
+    const dressUrl = "placeholder";
+
+    // Update the html output.
     setOutput(
       <div id="output">
         <p>Dress</p>
@@ -52,6 +60,12 @@ function App() {
   ***********************/
   var shoeClick = () => {
       console.log("Shoes button worked")
+
+      //Create the shoes URL
+      const shoesNum = (Math.random() * 10 + 2);
+      const shoesUrl = "placeholder";
+   
+    // Update the html output.
       setOutput(
         <div id="output">
           <p>Shoes</p>
@@ -65,7 +79,7 @@ function App() {
     <div className="App">
 
       <div className="content">
-        <h1>Options</h1>
+        <h1>Outfit Randomizer</h1>
         <h3>Pick a button below</h3>
         <button onClick={shirtClick}>Shirt / Bottoms</button>
         <button onClick={dressClick}>Dress </button>

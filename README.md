@@ -4,7 +4,7 @@ This assignment is to learn the basics of React in a web application. I wanted t
 
 This document is an outfit randomizer that will display a random image based on the user's selection. The user has an option to choose a random shirt and pants combo, dress, or shoes. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/O55s8XolkRs)
 
 # Web Pages
 
